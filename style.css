@@ -1,0 +1,43 @@
+#theCanvas {
+    background-color: gray;
+}
+
+#ui {
+    border-style: dotted;
+    padding: 10px;
+}
+
+#button {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.streamContainer {
+    position: absolute;
+    background-color: yellow;
+    display: block;
+}
+
+.streamContainer .toolbox {
+    position: absolute;
+    z-index: 1;
+}
+
+.streamContainer .resizer {
+    background-color: lightsteelblue;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    position: absolute;
+    bottom: -0.5em;
+    right: -0.5em;
+}
+
+.streamContainer video {
+    width: 100%;
+    height: 100%;
+}
+
+.streamContainer.camera video {
+    transform: scaleX(-1);
+}
